@@ -1,10 +1,10 @@
 import scala.scalajs.sbtplugin.ScalaJSPlugin.ScalaJSKeys._
 
-name := "gh-pages-generator"
+name := "reactjs-scalajs"
 
 version := "1.0"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.4"
 
 
 scalaJSSettings
@@ -13,7 +13,13 @@ persistLauncher := true
 
 persistLauncher in Test := false
 
-libraryDependencies += "org.scala-lang.modules.scalajs" %%% "scalajs-jquery" % "0.6"
+
+libraryDependencies += "com.github.japgolly.scalajs-react" %%% "core" % "0.6.0"
+
+// React itself
+//   (react-with-addons.js can be react.js, react.min.js, react-with-addons.min.js)
+jsDependencies += "org.webjars" % "react" % "0.12.1" / "react-with-addons.js" commonJSName "React"
+
 
 //DOM, which doesn't exist by default in the Rhino runner. To make the DOM available in Rhino
 jsDependencies += scala.scalajs.sbtplugin.RuntimeDOM

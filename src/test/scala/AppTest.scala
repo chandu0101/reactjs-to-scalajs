@@ -7,12 +7,10 @@ import utest.framework.TestSuite
  */
 object AppTest extends TestSuite {
 
-  //Initialize App
-  App.setupUI()
 
   def tests = TestSuite {
     'ScalaJsRocks {
-      assert(jQuery("footer:contains('Happy Coding!')").length == 1)
+      println("TODO")
     }
   }
 
