@@ -1,4 +1,6 @@
 reactjs-to-scalajs
 ==================
 
-Simple utility to generate scalajs wrappers for party pure reactjs components
+Simple utils for scalajs-react
+
+http://chandu0101.github.io/reactjs-to-scalajs

@@ -2,26 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Componenet Generator</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css" >
+    <title>ReactJs to ScalaJS-React Util</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-size: 13px;
+            line-height: 20px;
+            margin: auto;
+        }
+
+        textarea {
+          border :  1px solid #eee;
+            outline: none;
+        }
+
+        textarea:focus
+        {
+            border: 1px solid #ffefcc;
+        }
+
+    </style>
     <!-- Include JavaScript dependencies -->
     <script type="text/javascript" src="js/reactjs-scalajs-jsdeps.js"></script>
 </head>
 <body>
-<nav>
-    <div class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Generator</a>
-        </div>
-    </div>
 
-</nav>
 
 <div id="container"></div>
 
 <!-- Include Scala.js compiled code -->
 <script type="text/javascript" src="js/reactjs-scalajs-opt.js"></script>
 <!-- Run JSApp -->
-<script type="text/javascript" src="js/reactjs-scalajs-launcher.js"></script>
+ <script>chandu0101.scalajsreact.ReactApp().main()</script>
 </body>
 </html>

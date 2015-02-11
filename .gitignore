@@ -20,3 +20,5 @@ project/plugins/project/
 .idea
 .idea_modules
 *.pid
+
+.DS_Store

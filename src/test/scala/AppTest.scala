@@ -1,4 +1,3 @@
-import org.scalajs.jquery.jQuery
 import utest._
 import utest.framework.TestSuite
 
@@ -10,7 +9,7 @@ object AppTest extends TestSuite {
 
   def tests = TestSuite {
     'ScalaJsRocks {
-      println("TODO")
+
     }
   }
 
