@@ -1,8 +1,11 @@
 #!/bin/sh
 
 
+
 # get comment
 comment="$1"
+
+sbt fullOptJS
 
 if [ "$comment" == "" ]; then
 comment="push form CI"
@@ -15,9 +18,9 @@ projectPath=$ghPagesPath/sjru
 
 cp index.html $projectPath
 
-cp  js/demo-opt.js $projectPath/js/
+cp  js/reactjs-scalajs-opt.js $projectPath/js/
 
-cp  js/demo-jsdeps.js $projectPath/js/
+cp  js/reactjs-scalajs-jsdeps.js $projectPath/js/
 
 cd $ghPagesPath
 
