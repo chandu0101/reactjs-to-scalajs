@@ -23,6 +23,7 @@ object ReactNavMenu {
 
     val menuNav = Seq( alignItems := "center" ,
       color := "rgb(244, 233, 233)" ,
+      color := "red" ,
       display := "-ms-flexbox" ,
       display := "-webkit-box" ,
       display := "-webkit-flex" ,

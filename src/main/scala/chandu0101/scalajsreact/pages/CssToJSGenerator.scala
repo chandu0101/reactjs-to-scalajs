@@ -34,8 +34,8 @@ object CssToJSGenerator {
     .render((_, S, B) => {
     div(padding := "30px")(
       h3("Convert Css To Js styles "),
-      input(tpe := "checkbox", checked := S.autoPrefixer ,onChange --> B.onCheckBoxChange )("Use Auto Prefixer"),
-      InOutGenerator(onButtonClick = B.generate)
+      input(tpe := "checkbox", checked := S.autoPrefixer ,onChange --> B.onCheckBoxChange )("Use" ,a(href := "https://github.com/postcss/autoprefixer" ,target := "_blank" ,textDecoration := "none", color := "red" ,padding := "0 5px")("Auto Prefixer")),
+      InOutGenerator(onButtonClick = B.generate,inputValue = "display : flex;")
     )
   })
     .buildU

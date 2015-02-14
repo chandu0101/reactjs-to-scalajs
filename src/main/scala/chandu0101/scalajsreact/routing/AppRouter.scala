@@ -47,6 +47,8 @@ object AppRouter {
   }
 
 
-  val baseUrl = BaseUrl.fromWindowOrigin / "reactjs-scalajs/"
+//  val baseUrl = BaseUrl.fromWindowOrigin / "reactjs-scalajs/"
+  val baseUrl = BaseUrl("http://chandu0101.github.io/sjru")
+  
   val C = AppPage.router(baseUrl)
 }

@@ -29,7 +29,7 @@ object JsStylesPrefixer {
     .render((P, S, B) => {
       div(padding := "30px")(
        h3("AutoPrefixer for scalajs styles"),
-      InOutGenerator(onButtonClick = B.applyPrefixes)
+      InOutGenerator(onButtonClick = B.applyPrefixes,inputValue = "display := flex,")
       )
     })
     .buildU
