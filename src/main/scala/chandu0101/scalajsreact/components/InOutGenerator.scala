@@ -32,7 +32,7 @@ object InOutGenerator {
     boxShadow := "0 1px 4px lightBlue",
     flexDirection := "column" ,
     msFlexDirection := "column" ,
-    alignItems := "stretch",
+//    alignItems := "stretch",
     webkitBoxDirection := "normal" ,
     webkitBoxOrient := "vertical" ,
     webkitFlexDirection := "column")

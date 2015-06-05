@@ -1,9 +1,12 @@
 #!/bin/sh
 
 
+#Handy script to deploy app to github pages(gh-pages)
 
 # get comment
 comment="$1"
+
+sbt clean
 
 sbt fullOptJS
 
@@ -12,19 +15,25 @@ comment="push form CI"
 echo "no comment specified to deploy, using default : $comment"
 fi
 
+projectName="reactjs-scalajs"
+
 ghPagesPath="/Users/chandrasekharkode/Desktop/Kode/Programming/scalaprojects/chandu0101.github.io"
 
-projectPath=$ghPagesPath/sjru
+projectPath=${ghPagesPath}/${projectName}
 
-cp index.html $projectPath
+mkdir -p ${projectPath}/js
 
-cp  js/reactjs-scalajs-opt.js $projectPath/js/
+cp index.html ${projectPath}
 
-cp  js/reactjs-scalajs-jsdeps.js $projectPath/js/
+cp  js/${projectName}-opt.js ${projectPath}/js/
 
-cd $ghPagesPath
+cp  js/${projectName}-jsdeps.js ${projectPath}/js/
 
-git add sjru
+cp  js/${projectName}-launcher.js ${projectPath}/js/
+
+cd ${ghPagesPath}
+
+git add ${projectName}
 
 git commit -m "$comment"
 
