@@ -16,7 +16,8 @@ persistLauncher := true
 persistLauncher in Test := false
 
 
-libraryDependencies ++= Seq("com.chandu0101.scalajs-react-components" %%% "core" % "0.1.1-SNAPSHOT",
+libraryDependencies ++= Seq(
+//  "com.chandu0101.scalajs-react-components" %%% "core" % "0.1.1-SNAPSHOT",
   "com.github.japgolly.scalacss" %%% "core" % scalaCssVersion,
   "com.github.japgolly.scalacss" %%% "ext-react" % scalaCssVersion,
   "com.github.japgolly.scalajs-react" %%% "extra" % scalajsReactVersion)
