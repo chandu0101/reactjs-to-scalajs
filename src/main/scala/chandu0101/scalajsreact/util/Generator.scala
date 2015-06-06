@@ -96,12 +96,14 @@ object Generator {
      s"""
         |object $componentName {
         |
-        |def apply($wrapperProps) = {
+        |   def apply($wrapperProps) = {
         |
-        | val toJS = js.Dynamic.literal()
-        | $toJS
-        | f(toJS).asInstanceOf[ReactComponentU_]
-        |}
+        |    val toJS = js.Dynamic.literal()
+        |    $toJS
+        |
+        |    val f = $jsName
+        |    f(toJS).asInstanceOf[ReactComponentU_]
+        |   }
         |
         |}
       """.stripMargin
